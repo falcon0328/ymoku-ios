@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061E7A93490377E66F43FB73 /* Pods_Ymoku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791FFAD8000026B4DC88E49D /* Pods_Ymoku.framework */; };
+		30FD0416212DF956C31AAB28 /* Pods_YmokuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8403A36094FEA6528FBC492 /* Pods_YmokuUITests.framework */; };
+		4870BDCA575918C8708D06C2 /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BA04C36140D1FD21BD626A /* Pods_Infra.framework */; };
+		5093682E1A779CCF221915FB /* Pods_InfraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427913507D97C97FBCEDA650 /* Pods_InfraTests.framework */; };
+		5505FC14225CD62600D01C87 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; };
+		5505FC1B225CD62600D01C87 /* InfraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505FC1A225CD62600D01C87 /* InfraTests.swift */; };
+		5505FC1D225CD62600D01C87 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 5505FC0D225CD62600D01C87 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5505FC20225CD62600D01C87 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; };
+		5505FC21225CD62600D01C87 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CAE225CD3010006C3EE /* AppDelegate.swift */; };
 		55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CB0225CD3010006C3EE /* ViewController.swift */; };
 		55B74CB4225CD3010006C3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B74CB2225CD3010006C3EE /* Main.storyboard */; };
@@ -19,9 +28,33 @@
 		55B74CE8225CD3C70006C3EE /* YMokuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */; };
 		55B74CE9225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */; };
 		55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE4225CD3C70006C3EE /* YMokuColor.swift */; };
+		55E8DC18225CD77900B9108C /* Infra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E8DC17225CD77900B9108C /* Infra.swift */; };
+		55E8DC1A225CD8A000B9108C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */; };
+		5AE43923067DF684141DFA29 /* Pods_YmokuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F231E1E16000E3AF93865E89 /* Pods_YmokuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5505FC15225CD62600D01C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5505FC0A225CD62600D01C87;
+			remoteInfo = Infra;
+		};
+		5505FC17225CD62600D01C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B74CAA225CD3010006C3EE;
+			remoteInfo = Ymoku;
+		};
+		5505FC1E225CD62600D01C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5505FC0A225CD62600D01C87;
+			remoteInfo = Infra;
+		};
 		55B74CC0225CD3030006C3EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
@@ -38,7 +71,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5505FC27225CD62600D01C87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5505FC21225CD62600D01C87 /* Infra.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D1CA6E0FBDB2214308F855A /* Pods-InfraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfraTests/Pods-InfraTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AF43DBE27FBDC31AEA6FE2F /* Pods-YmokuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YmokuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YmokuTests/Pods-YmokuTests.release.xcconfig"; sourceTree = "<group>"; };
+		327792893D0F033979BD7048 /* Pods-YmokuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YmokuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YmokuUITests/Pods-YmokuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		427913507D97C97FBCEDA650 /* Pods_InfraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5505FC0B225CD62600D01C87 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5505FC0D225CD62600D01C87 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
+		5505FC0E225CD62600D01C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5505FC13225CD62600D01C87 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5505FC1A225CD62600D01C87 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
+		5505FC1C225CD62600D01C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55B74CAB225CD3010006C3EE /* Ymoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ymoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B74CAE225CD3010006C3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55B74CB0225CD3010006C3EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,13 +114,45 @@
 		55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationController.swift; sourceTree = "<group>"; };
 		55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationBarTitleTextAttribute.swift; sourceTree = "<group>"; };
 		55B74CE4225CD3C70006C3EE /* YMokuColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuColor.swift; sourceTree = "<group>"; };
+		55E8DC17225CD77900B9108C /* Infra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infra.swift; sourceTree = "<group>"; };
+		55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		732ADE8CB1249946AF3463E3 /* Pods-YmokuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YmokuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YmokuUITests/Pods-YmokuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		791FFAD8000026B4DC88E49D /* Pods_Ymoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ymoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		854131C7E3FE3F2BBFC98D12 /* Pods-YmokuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YmokuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YmokuTests/Pods-YmokuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2875BA45CCD64C899558BDB /* Pods-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.debug.xcconfig"; sourceTree = "<group>"; };
+		B69BF3EF933F1A7A95C10D0F /* Pods-Ymoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ymoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ymoku/Pods-Ymoku.release.xcconfig"; sourceTree = "<group>"; };
+		BA0AFCE4E0D5EE1DDDE16352 /* Pods-Ymoku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ymoku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ymoku/Pods-Ymoku.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6B05EAAFEF6E36C3CB70EB /* Pods-InfraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfraTests/Pods-InfraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8403A36094FEA6528FBC492 /* Pods_YmokuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YmokuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95F31D86296A360DE9AAEC8 /* Pods-Infra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infra/Pods-Infra.release.xcconfig"; sourceTree = "<group>"; };
+		F231E1E16000E3AF93865E89 /* Pods_YmokuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YmokuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BA04C36140D1FD21BD626A /* Pods_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5505FC08225CD62600D01C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4870BDCA575918C8708D06C2 /* Pods_Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5505FC10225CD62600D01C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5505FC14225CD62600D01C87 /* Infra.framework in Frameworks */,
+				5093682E1A779CCF221915FB /* Pods_InfraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55B74CA8225CD3010006C3EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5505FC20225CD62600D01C87 /* Infra.framework in Frameworks */,
+				061E7A93490377E66F43FB73 /* Pods_Ymoku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE43923067DF684141DFA29 /* Pods_YmokuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,19 +168,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FD0416212DF956C31AAB28 /* Pods_YmokuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5505FC0C225CD62600D01C87 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				5505FC0D225CD62600D01C87 /* Infra.h */,
+				5505FC0E225CD62600D01C87 /* Info.plist */,
+				55E8DC17225CD77900B9108C /* Infra.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		5505FC19225CD62600D01C87 /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				5505FC1A225CD62600D01C87 /* InfraTests.swift */,
+				5505FC1C225CD62600D01C87 /* Info.plist */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
 		55B74CA2225CD3010006C3EE = {
 			isa = PBXGroup;
 			children = (
 				55B74CAD225CD3010006C3EE /* Ymoku */,
 				55B74CC2225CD3030006C3EE /* YmokuTests */,
 				55B74CCD225CD3030006C3EE /* YmokuUITests */,
+				5505FC0C225CD62600D01C87 /* Infra */,
+				5505FC19225CD62600D01C87 /* InfraTests */,
 				55B74CAC225CD3010006C3EE /* Products */,
+				C0E387849023257A3C726D7A /* Pods */,
+				90EE4CF659A30799732BA4AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +214,8 @@
 				55B74CAB225CD3010006C3EE /* Ymoku.app */,
 				55B74CBF225CD3030006C3EE /* YmokuTests.xctest */,
 				55B74CCA225CD3030006C3EE /* YmokuUITests.xctest */,
+				5505FC0B225CD62600D01C87 /* Infra.framework */,
+				5505FC13225CD62600D01C87 /* InfraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +232,7 @@
 				55B74CB5225CD3030006C3EE /* Assets.xcassets */,
 				55B74CB7225CD3030006C3EE /* LaunchScreen.storyboard */,
 				55B74CBA225CD3030006C3EE /* Info.plist */,
+				55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */,
 			);
 			path = Ymoku;
 			sourceTree = "<group>";
@@ -167,20 +284,104 @@
 			path = "../../mokumoku-app-ios/mokumoku-app-ios/Color";
 			sourceTree = "<group>";
 		};
+		90EE4CF659A30799732BA4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7BA04C36140D1FD21BD626A /* Pods_Infra.framework */,
+				427913507D97C97FBCEDA650 /* Pods_InfraTests.framework */,
+				791FFAD8000026B4DC88E49D /* Pods_Ymoku.framework */,
+				F231E1E16000E3AF93865E89 /* Pods_YmokuTests.framework */,
+				D8403A36094FEA6528FBC492 /* Pods_YmokuUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E387849023257A3C726D7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2875BA45CCD64C899558BDB /* Pods-Infra.debug.xcconfig */,
+				E95F31D86296A360DE9AAEC8 /* Pods-Infra.release.xcconfig */,
+				CA6B05EAAFEF6E36C3CB70EB /* Pods-InfraTests.debug.xcconfig */,
+				1D1CA6E0FBDB2214308F855A /* Pods-InfraTests.release.xcconfig */,
+				BA0AFCE4E0D5EE1DDDE16352 /* Pods-Ymoku.debug.xcconfig */,
+				B69BF3EF933F1A7A95C10D0F /* Pods-Ymoku.release.xcconfig */,
+				854131C7E3FE3F2BBFC98D12 /* Pods-YmokuTests.debug.xcconfig */,
+				2AF43DBE27FBDC31AEA6FE2F /* Pods-YmokuTests.release.xcconfig */,
+				732ADE8CB1249946AF3463E3 /* Pods-YmokuUITests.debug.xcconfig */,
+				327792893D0F033979BD7048 /* Pods-YmokuUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5505FC06225CD62600D01C87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5505FC1D225CD62600D01C87 /* Infra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		55B74CAA225CD3010006C3EE /* Ymoku */ = {
+		5505FC0A225CD62600D01C87 /* Infra */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55B74CD3225CD3030006C3EE /* Build configuration list for PBXNativeTarget "Ymoku" */;
+			buildConfigurationList = 5505FC26225CD62600D01C87 /* Build configuration list for PBXNativeTarget "Infra" */;
 			buildPhases = (
-				55B74CA7225CD3010006C3EE /* Sources */,
-				55B74CA8225CD3010006C3EE /* Frameworks */,
-				55B74CA9225CD3010006C3EE /* Resources */,
+				C06196750F3EC091DA4B97B6 /* [CP] Check Pods Manifest.lock */,
+				5505FC06225CD62600D01C87 /* Headers */,
+				5505FC07225CD62600D01C87 /* Sources */,
+				5505FC08225CD62600D01C87 /* Frameworks */,
+				5505FC09225CD62600D01C87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = 5505FC0B225CD62600D01C87 /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5505FC12225CD62600D01C87 /* InfraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5505FC28225CD62600D01C87 /* Build configuration list for PBXNativeTarget "InfraTests" */;
+			buildPhases = (
+				DE7805B9BE66D1B3E11F3D3C /* [CP] Check Pods Manifest.lock */,
+				5505FC0F225CD62600D01C87 /* Sources */,
+				5505FC10225CD62600D01C87 /* Frameworks */,
+				5505FC11225CD62600D01C87 /* Resources */,
+				9B5698BEC2E9CA30A68E973A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5505FC16225CD62600D01C87 /* PBXTargetDependency */,
+				5505FC18225CD62600D01C87 /* PBXTargetDependency */,
+			);
+			name = InfraTests;
+			productName = InfraTests;
+			productReference = 5505FC13225CD62600D01C87 /* InfraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55B74CAA225CD3010006C3EE /* Ymoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B74CD3225CD3030006C3EE /* Build configuration list for PBXNativeTarget "Ymoku" */;
+			buildPhases = (
+				ED1A4C75D971EE806523D341 /* [CP] Check Pods Manifest.lock */,
+				55B74CA7225CD3010006C3EE /* Sources */,
+				55B74CA8225CD3010006C3EE /* Frameworks */,
+				55B74CA9225CD3010006C3EE /* Resources */,
+				5505FC27225CD62600D01C87 /* Embed Frameworks */,
+				149FB64926A32BFF5FE0106F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5505FC1F225CD62600D01C87 /* PBXTargetDependency */,
 			);
 			name = Ymoku;
 			productName = Ymoku;
@@ -191,6 +392,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55B74CD6225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuTests" */;
 			buildPhases = (
+				178FFFC39A7F2C0A9C7B233F /* [CP] Check Pods Manifest.lock */,
 				55B74CBB225CD3030006C3EE /* Sources */,
 				55B74CBC225CD3030006C3EE /* Frameworks */,
 				55B74CBD225CD3030006C3EE /* Resources */,
@@ -209,6 +411,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55B74CD9225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuUITests" */;
 			buildPhases = (
+				F1CD494AFEBDE4E43B482058 /* [CP] Check Pods Manifest.lock */,
 				55B74CC6225CD3030006C3EE /* Sources */,
 				55B74CC7225CD3030006C3EE /* Frameworks */,
 				55B74CC8225CD3030006C3EE /* Resources */,
@@ -233,6 +436,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Falcon Tech";
 				TargetAttributes = {
+					5505FC0A225CD62600D01C87 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					5505FC12225CD62600D01C87 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 55B74CAA225CD3010006C3EE;
+					};
 					55B74CAA225CD3010006C3EE = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -262,16 +473,33 @@
 				55B74CAA225CD3010006C3EE /* Ymoku */,
 				55B74CBE225CD3030006C3EE /* YmokuTests */,
 				55B74CC9225CD3030006C3EE /* YmokuUITests */,
+				5505FC0A225CD62600D01C87 /* Infra */,
+				5505FC12225CD62600D01C87 /* InfraTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5505FC09225CD62600D01C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5505FC11225CD62600D01C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55B74CA9225CD3010006C3EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55B74CB9225CD3030006C3EE /* LaunchScreen.storyboard in Resources */,
+				55E8DC1A225CD8A000B9108C /* GoogleService-Info.plist in Resources */,
 				55B74CB6225CD3030006C3EE /* Assets.xcassets in Resources */,
 				55B74CB4225CD3010006C3EE /* Main.storyboard in Resources */,
 			);
@@ -293,7 +521,184 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		149FB64926A32BFF5FE0106F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ymoku/Pods-Ymoku-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ymoku/Pods-Ymoku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		178FFFC39A7F2C0A9C7B233F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YmokuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5698BEC2E9CA30A68E973A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InfraTests/Pods-InfraTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfraTests/Pods-InfraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06196750F3EC091DA4B97B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7805B9BE66D1B3E11F3D3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1A4C75D971EE806523D341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ymoku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1CD494AFEBDE4E43B482058 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YmokuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		5505FC07225CD62600D01C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E8DC18225CD77900B9108C /* Infra.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5505FC0F225CD62600D01C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5505FC1B225CD62600D01C87 /* InfraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55B74CA7225CD3010006C3EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +732,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5505FC16225CD62600D01C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5505FC0A225CD62600D01C87 /* Infra */;
+			targetProxy = 5505FC15225CD62600D01C87 /* PBXContainerItemProxy */;
+		};
+		5505FC18225CD62600D01C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B74CAA225CD3010006C3EE /* Ymoku */;
+			targetProxy = 5505FC17225CD62600D01C87 /* PBXContainerItemProxy */;
+		};
+		5505FC1F225CD62600D01C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5505FC0A225CD62600D01C87 /* Infra */;
+			targetProxy = 5505FC1E225CD62600D01C87 /* PBXContainerItemProxy */;
+		};
 		55B74CC1225CD3030006C3EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 55B74CAA225CD3010006C3EE /* Ymoku */;
@@ -359,6 +779,109 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5505FC22225CD62600D01C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2875BA45CCD64C899558BDB /* Pods-Infra.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5505FC23225CD62600D01C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95F31D86296A360DE9AAEC8 /* Pods-Infra.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5505FC24225CD62600D01C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6B05EAAFEF6E36C3CB70EB /* Pods-InfraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.InfraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ymoku.app/Ymoku";
+			};
+			name = Debug;
+		};
+		5505FC25225CD62600D01C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D1CA6E0FBDB2214308F855A /* Pods-InfraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.InfraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ymoku.app/Ymoku";
+			};
+			name = Release;
+		};
 		55B74CD1225CD3030006C3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,7 +1000,9 @@
 		};
 		55B74CD4225CD3030006C3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0AFCE4E0D5EE1DDDE16352 /* Pods-Ymoku.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D5LBLPX9R;
@@ -495,7 +1020,9 @@
 		};
 		55B74CD5225CD3030006C3EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69BF3EF933F1A7A95C10D0F /* Pods-Ymoku.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D5LBLPX9R;
@@ -513,6 +1040,7 @@
 		};
 		55B74CD7225CD3030006C3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 854131C7E3FE3F2BBFC98D12 /* Pods-YmokuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +1062,7 @@
 		};
 		55B74CD8225CD3030006C3EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF43DBE27FBDC31AEA6FE2F /* Pods-YmokuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +1084,7 @@
 		};
 		55B74CDA225CD3030006C3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732ADE8CB1249946AF3463E3 /* Pods-YmokuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +1105,7 @@
 		};
 		55B74CDB225CD3030006C3EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327792893D0F033979BD7048 /* Pods-YmokuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +1127,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5505FC26225CD62600D01C87 /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5505FC22225CD62600D01C87 /* Debug */,
+				5505FC23225CD62600D01C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5505FC28225CD62600D01C87 /* Build configuration list for PBXNativeTarget "InfraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5505FC24225CD62600D01C87 /* Debug */,
+				5505FC25225CD62600D01C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55B74CA6225CD3010006C3EE /* Build configuration list for PBXProject "Ymoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

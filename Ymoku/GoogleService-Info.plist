@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>321182420914-bh8ckniacm183grre8h3bnrun1lugjv9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.321182420914-bh8ckniacm183grre8h3bnrun1lugjv9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZsgReU1AhtdJMEfGmU0gXA73OVcPjSB8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>321182420914</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.co.falcon-tech.Ymoku</string>
+	<key>PROJECT_ID</key>
+	<string>ymoku-group</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ymoku-group.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:321182420914:ios:00f206b7b5983bc5</string>
+	<key>DATABASE_URL</key>
+	<string>https://ymoku-group.firebaseio.com</string>
+</dict>
+</plist>

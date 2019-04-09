@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CAE225CD3010006C3EE /* AppDelegate.swift */; };
+		55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CB0225CD3010006C3EE /* ViewController.swift */; };
+		55B74CB4225CD3010006C3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B74CB2225CD3010006C3EE /* Main.storyboard */; };
+		55B74CB6225CD3030006C3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B74CB5225CD3030006C3EE /* Assets.xcassets */; };
+		55B74CB9225CD3030006C3EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B74CB7225CD3030006C3EE /* LaunchScreen.storyboard */; };
+		55B74CC4225CD3030006C3EE /* YmokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CC3225CD3030006C3EE /* YmokuTests.swift */; };
+		55B74CCF225CD3030006C3EE /* YmokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CCE225CD3030006C3EE /* YmokuUITests.swift */; };
+		55B74CE5225CD3C70006C3EE /* UIColor+rgb+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CDD225CD3C70006C3EE /* UIColor+rgb+hex.swift */; };
+		55B74CE6225CD3C70006C3EE /* String+URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CDE225CD3C70006C3EE /* String+URLEncoded.swift */; };
+		55B74CE8225CD3C70006C3EE /* YMokuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */; };
+		55B74CE9225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */; };
+		55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE4225CD3C70006C3EE /* YMokuColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55B74CC0225CD3030006C3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B74CAA225CD3010006C3EE;
+			remoteInfo = Ymoku;
+		};
+		55B74CCB225CD3030006C3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B74CA3225CD3010006C3EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B74CAA225CD3010006C3EE;
+			remoteInfo = Ymoku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55B74CAB225CD3010006C3EE /* Ymoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ymoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B74CAE225CD3010006C3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55B74CB0225CD3010006C3EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55B74CB3225CD3010006C3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55B74CB5225CD3030006C3EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55B74CB8225CD3030006C3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55B74CBA225CD3030006C3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B74CBF225CD3030006C3EE /* YmokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YmokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B74CC3225CD3030006C3EE /* YmokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuTests.swift; sourceTree = "<group>"; };
+		55B74CC5225CD3030006C3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B74CCA225CD3030006C3EE /* YmokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YmokuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B74CCE225CD3030006C3EE /* YmokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuUITests.swift; sourceTree = "<group>"; };
+		55B74CD0225CD3030006C3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B74CDD225CD3C70006C3EE /* UIColor+rgb+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+rgb+hex.swift"; sourceTree = "<group>"; };
+		55B74CDE225CD3C70006C3EE /* String+URLEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URLEncoded.swift"; sourceTree = "<group>"; };
+		55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationController.swift; sourceTree = "<group>"; };
+		55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationBarTitleTextAttribute.swift; sourceTree = "<group>"; };
+		55B74CE4225CD3C70006C3EE /* YMokuColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuColor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55B74CA8225CD3010006C3EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CBC225CD3030006C3EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CC7225CD3030006C3EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55B74CA2225CD3010006C3EE = {
+			isa = PBXGroup;
+			children = (
+				55B74CAD225CD3010006C3EE /* Ymoku */,
+				55B74CC2225CD3030006C3EE /* YmokuTests */,
+				55B74CCD225CD3030006C3EE /* YmokuUITests */,
+				55B74CAC225CD3010006C3EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55B74CAC225CD3010006C3EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CAB225CD3010006C3EE /* Ymoku.app */,
+				55B74CBF225CD3030006C3EE /* YmokuTests.xctest */,
+				55B74CCA225CD3030006C3EE /* YmokuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55B74CAD225CD3010006C3EE /* Ymoku */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CDC225CD3C70006C3EE /* Extension */,
+				55B74CE3225CD3C70006C3EE /* Color */,
+				55B74CE0225CD3C70006C3EE /* Navigation */,
+				55B74CAE225CD3010006C3EE /* AppDelegate.swift */,
+				55B74CB0225CD3010006C3EE /* ViewController.swift */,
+				55B74CB2225CD3010006C3EE /* Main.storyboard */,
+				55B74CB5225CD3030006C3EE /* Assets.xcassets */,
+				55B74CB7225CD3030006C3EE /* LaunchScreen.storyboard */,
+				55B74CBA225CD3030006C3EE /* Info.plist */,
+			);
+			path = Ymoku;
+			sourceTree = "<group>";
+		};
+		55B74CC2225CD3030006C3EE /* YmokuTests */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CC3225CD3030006C3EE /* YmokuTests.swift */,
+				55B74CC5225CD3030006C3EE /* Info.plist */,
+			);
+			path = YmokuTests;
+			sourceTree = "<group>";
+		};
+		55B74CCD225CD3030006C3EE /* YmokuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CCE225CD3030006C3EE /* YmokuUITests.swift */,
+				55B74CD0225CD3030006C3EE /* Info.plist */,
+			);
+			path = YmokuUITests;
+			sourceTree = "<group>";
+		};
+		55B74CDC225CD3C70006C3EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CDD225CD3C70006C3EE /* UIColor+rgb+hex.swift */,
+				55B74CDE225CD3C70006C3EE /* String+URLEncoded.swift */,
+			);
+			name = Extension;
+			path = "../../mokumoku-app-ios/mokumoku-app-ios/Extension";
+			sourceTree = "<group>";
+		};
+		55B74CE0225CD3C70006C3EE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */,
+				55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */,
+			);
+			name = Navigation;
+			path = "../../mokumoku-app-ios/mokumoku-app-ios/Navigation";
+			sourceTree = "<group>";
+		};
+		55B74CE3225CD3C70006C3EE /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				55B74CE4225CD3C70006C3EE /* YMokuColor.swift */,
+			);
+			name = Color;
+			path = "../../mokumoku-app-ios/mokumoku-app-ios/Color";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55B74CAA225CD3010006C3EE /* Ymoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B74CD3225CD3030006C3EE /* Build configuration list for PBXNativeTarget "Ymoku" */;
+			buildPhases = (
+				55B74CA7225CD3010006C3EE /* Sources */,
+				55B74CA8225CD3010006C3EE /* Frameworks */,
+				55B74CA9225CD3010006C3EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ymoku;
+			productName = Ymoku;
+			productReference = 55B74CAB225CD3010006C3EE /* Ymoku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55B74CBE225CD3030006C3EE /* YmokuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B74CD6225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuTests" */;
+			buildPhases = (
+				55B74CBB225CD3030006C3EE /* Sources */,
+				55B74CBC225CD3030006C3EE /* Frameworks */,
+				55B74CBD225CD3030006C3EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B74CC1225CD3030006C3EE /* PBXTargetDependency */,
+			);
+			name = YmokuTests;
+			productName = YmokuTests;
+			productReference = 55B74CBF225CD3030006C3EE /* YmokuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55B74CC9225CD3030006C3EE /* YmokuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B74CD9225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuUITests" */;
+			buildPhases = (
+				55B74CC6225CD3030006C3EE /* Sources */,
+				55B74CC7225CD3030006C3EE /* Frameworks */,
+				55B74CC8225CD3030006C3EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B74CCC225CD3030006C3EE /* PBXTargetDependency */,
+			);
+			name = YmokuUITests;
+			productName = YmokuUITests;
+			productReference = 55B74CCA225CD3030006C3EE /* YmokuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55B74CA3225CD3010006C3EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Falcon Tech";
+				TargetAttributes = {
+					55B74CAA225CD3010006C3EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					55B74CBE225CD3030006C3EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 55B74CAA225CD3010006C3EE;
+					};
+					55B74CC9225CD3030006C3EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 55B74CAA225CD3010006C3EE;
+					};
+				};
+			};
+			buildConfigurationList = 55B74CA6225CD3010006C3EE /* Build configuration list for PBXProject "Ymoku" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55B74CA2225CD3010006C3EE;
+			productRefGroup = 55B74CAC225CD3010006C3EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55B74CAA225CD3010006C3EE /* Ymoku */,
+				55B74CBE225CD3030006C3EE /* YmokuTests */,
+				55B74CC9225CD3030006C3EE /* YmokuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55B74CA9225CD3010006C3EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B74CB9225CD3030006C3EE /* LaunchScreen.storyboard in Resources */,
+				55B74CB6225CD3030006C3EE /* Assets.xcassets in Resources */,
+				55B74CB4225CD3010006C3EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CBD225CD3030006C3EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CC8225CD3030006C3EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55B74CA7225CD3010006C3EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B74CE5225CD3C70006C3EE /* UIColor+rgb+hex.swift in Sources */,
+				55B74CE6225CD3C70006C3EE /* String+URLEncoded.swift in Sources */,
+				55B74CE9225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift in Sources */,
+				55B74CE8225CD3C70006C3EE /* YMokuNavigationController.swift in Sources */,
+				55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */,
+				55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */,
+				55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CBB225CD3030006C3EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B74CC4225CD3030006C3EE /* YmokuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B74CC6225CD3030006C3EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B74CCF225CD3030006C3EE /* YmokuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55B74CC1225CD3030006C3EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B74CAA225CD3010006C3EE /* Ymoku */;
+			targetProxy = 55B74CC0225CD3030006C3EE /* PBXContainerItemProxy */;
+		};
+		55B74CCC225CD3030006C3EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B74CAA225CD3010006C3EE /* Ymoku */;
+			targetProxy = 55B74CCB225CD3030006C3EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55B74CB2225CD3010006C3EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B74CB3225CD3010006C3EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55B74CB7225CD3030006C3EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B74CB8225CD3030006C3EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55B74CD1225CD3030006C3EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55B74CD2225CD3030006C3EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55B74CD4225CD3030006C3EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = Ymoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.Ymoku";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55B74CD5225CD3030006C3EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = Ymoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.Ymoku";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55B74CD7225CD3030006C3EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = YmokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.YmokuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ymoku.app/Ymoku";
+			};
+			name = Debug;
+		};
+		55B74CD8225CD3030006C3EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = YmokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.YmokuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ymoku.app/Ymoku";
+			};
+			name = Release;
+		};
+		55B74CDA225CD3030006C3EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = YmokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.YmokuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ymoku;
+			};
+			name = Debug;
+		};
+		55B74CDB225CD3030006C3EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5LBLPX9R;
+				INFOPLIST_FILE = YmokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.falcon-tech.YmokuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ymoku;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55B74CA6225CD3010006C3EE /* Build configuration list for PBXProject "Ymoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B74CD1225CD3030006C3EE /* Debug */,
+				55B74CD2225CD3030006C3EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B74CD3225CD3030006C3EE /* Build configuration list for PBXNativeTarget "Ymoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B74CD4225CD3030006C3EE /* Debug */,
+				55B74CD5225CD3030006C3EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B74CD6225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B74CD7225CD3030006C3EE /* Debug */,
+				55B74CD8225CD3030006C3EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B74CD9225CD3030006C3EE /* Build configuration list for PBXNativeTarget "YmokuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B74CDA225CD3030006C3EE /* Debug */,
+				55B74CDB225CD3030006C3EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55B74CA3225CD3010006C3EE /* Project object */;
+}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Infra
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        Authentication.createUser(email: "falcon.x.0328@gmail.com", password: "******", completion: { e in
+            print(user)
+        })
+    }
+    
 }
 

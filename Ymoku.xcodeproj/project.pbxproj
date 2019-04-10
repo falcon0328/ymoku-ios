@@ -16,6 +16,7 @@
 		5505FC1D225CD62600D01C87 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 5505FC0D225CD62600D01C87 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5505FC20225CD62600D01C87 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; };
 		5505FC21225CD62600D01C87 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		555EA6B2225D933800FC4735 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555EA6B1225D933800FC4735 /* Authentication.storyboard */; };
 		558871C7225CE67900BE7D7D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558871C6225CE67900BE7D7D /* Authentication.swift */; };
 		55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CAE225CD3010006C3EE /* AppDelegate.swift */; };
 		55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CB0225CD3010006C3EE /* ViewController.swift */; };
@@ -97,6 +98,7 @@
 		5505FC13225CD62600D01C87 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5505FC1A225CD62600D01C87 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		5505FC1C225CD62600D01C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555EA6B1225D933800FC4735 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		558871C6225CE67900BE7D7D /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		55B74CAB225CD3010006C3EE /* Ymoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ymoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B74CAE225CD3010006C3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				55B74CB7225CD3030006C3EE /* LaunchScreen.storyboard */,
 				55B74CBA225CD3030006C3EE /* Info.plist */,
 				55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */,
+				555EA6B1225D933800FC4735 /* Authentication.storyboard */,
 			);
 			path = Ymoku;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				55E8DC1A225CD8A000B9108C /* GoogleService-Info.plist in Resources */,
 				55B74CB6225CD3030006C3EE /* Assets.xcassets in Resources */,
 				55B74CB4225CD3010006C3EE /* Main.storyboard in Resources */,
+				555EA6B2225D933800FC4735 /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

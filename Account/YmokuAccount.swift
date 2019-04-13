@@ -11,11 +11,33 @@ import Foundation
 /// ワイもく！のアカウントを表現するクラス
 public struct YmokuAccount {
     /// ユーザID
-    public let userID: String
+    public var userID: String
     /// メールアドレス
-    public let email: String
+    public var email: String
+    /// パスワード
+    public var password: String
     /// 表示名
-    public let displayName: String
+    public var displayName: String
     /// プロフィール
-    public let profile: YmokuProfile
+    public var profile: YmokuProfile
+    
+    /// イニシャライザ
+    ///
+    /// - Parameters:
+    ///   - userID: ユーザID
+    ///   - email: メールアドレス
+    ///   - password: パスワード
+    ///   - displayName: 表示名
+    ///   - profile: プロフィール
+    public init(userID: String,
+                email: String,
+                password: String,
+                displayName: String,
+                profile: YmokuProfile) {
+        self.userID = userID
+        self.email = email
+        self.password = password
+        self.displayName = displayName
+        self.profile = profile
+    }
 }

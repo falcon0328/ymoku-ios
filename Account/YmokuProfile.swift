@@ -11,9 +11,21 @@ import Foundation
 /// ワイもく！のプロフィール情報
 public struct YmokuProfile {
     /// 名字
-    public let lastName: String
+    public var lastName: String
     /// 名前
-    public let firstName: String
+    public var firstName: String
     /// 所属
-    public let affiliation: String
+    public var affiliation: String
+    
+    /// イニシャライザ
+    ///
+    /// - Parameters:
+    ///   - lastName: 名字
+    ///   - firstName: 名前
+    ///   - affiliation: 所属
+    public init(lastName: String, firstName: String, affiliation: String) {
+        self.lastName = lastName
+        self.firstName = firstName
+        self.affiliation = affiliation
+    }
 }

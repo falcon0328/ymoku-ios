@@ -73,7 +73,7 @@ class YmokuInputViewController: UIViewController {
     
     @objc func nextButtonTapped(_ sender: UIButton) {
         if !canMoveToNextPage() { return }
-        configAccountData()
+        if !configAccountData() { return }
         performSegue(withIdentifier: nextSegue, sender: self)
     }
     

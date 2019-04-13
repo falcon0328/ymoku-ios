@@ -16,6 +16,6 @@ public struct YmokuAccount {
     public let email: String
     /// 表示名
     public let displayName: String
-    /// 
+    /// プロフィール
     public let profile: YmokuProfile
 }

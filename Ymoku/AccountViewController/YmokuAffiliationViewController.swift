@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Infra
 
 class YmokuAffiliationViewController: YmokuInputViewController {
 
@@ -14,6 +15,9 @@ class YmokuAffiliationViewController: YmokuInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
+                                                                 target: self,
+                                                                 action: #selector(doneButtonTapped(_:)))
     }
     
     override func canMoveToNextPage() -> Bool {
@@ -31,5 +35,25 @@ class YmokuAffiliationViewController: YmokuInputViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+    }
+    
+    @objc func doneButtonTapped(_ sender: UIButton) {
+        guard let ymokuAccount = ymokuAccount else {
+            return
+        }
+        Authentication.createUser(email: ymokuAccount.email,
+                                  password: ymokuAccount.password,
+                                  completion: { error, userData in
+                                    if let error = error {
+                                        //TODO: エラー処理
+                                        return
+                                    }
+                                    guard let userData = userData else {
+                                        //TODO: エラー処理
+                                        return
+                                    }
+                                    print(userData)
+                                    
+        })
     }
 }

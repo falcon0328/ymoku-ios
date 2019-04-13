@@ -26,6 +26,7 @@ class YmokuInputViewController: UIViewController {
     /// 各サブクラスではこの名前をオーバーライドして利用すること
     public var nextSegue: String = ""
     
+    /// テキストフィールド真上に配置されているラベルのテキスト
     var titleLabelText = "" {
         didSet {
             label?.text = titleLabelText
@@ -71,12 +72,18 @@ class YmokuInputViewController: UIViewController {
         textView?.text = defaultText
     }
     
+    /// 次へのボタンをタップしたときのアクション
+    ///
+    /// - Parameter sender: イベントを送ったオブジェクト
     @objc func nextButtonTapped(_ sender: UIButton) {
         if !canMoveToNextPage() { return }
         if !configAccountData() { return }
         performSegue(withIdentifier: nextSegue, sender: self)
     }
     
+    /// アカウントを既に持っているのボタンを押したときのアクション
+    ///
+    /// - Parameter sender: イベントを送ったオブジェクト
     @objc func existAccountButtonTapped(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

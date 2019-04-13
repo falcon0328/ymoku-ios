@@ -29,6 +29,7 @@
 		5584EE2E2261974500200D15 /* YmokuDisplayNameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */; };
 		5584EE302261999400200D15 /* YmokuNameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2F2261999400200D15 /* YmokuNameInputViewController.swift */; };
 		5584EE3222619E3500200D15 /* YmokuAffiliationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE3122619E3500200D15 /* YmokuAffiliationViewController.swift */; };
+		5584EE342261AAC700200D15 /* AuthenticationUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE332261AAC700200D15 /* AuthenticationUserData.swift */; };
 		558871C7225CE67900BE7D7D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558871C6225CE67900BE7D7D /* Authentication.swift */; };
 		55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CAE225CD3010006C3EE /* AppDelegate.swift */; };
 		55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CB0225CD3010006C3EE /* ViewController.swift */; };
@@ -146,6 +147,7 @@
 		5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuDisplayNameInputViewController.swift; sourceTree = "<group>"; };
 		5584EE2F2261999400200D15 /* YmokuNameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuNameInputViewController.swift; sourceTree = "<group>"; };
 		5584EE3122619E3500200D15 /* YmokuAffiliationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuAffiliationViewController.swift; sourceTree = "<group>"; };
+		5584EE332261AAC700200D15 /* AuthenticationUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUserData.swift; sourceTree = "<group>"; };
 		558871C6225CE67900BE7D7D /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		55B74CAB225CD3010006C3EE /* Ymoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ymoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B74CAE225CD3010006C3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				5505FC0E225CD62600D01C87 /* Info.plist */,
 				55E8DC17225CD77900B9108C /* Infra.swift */,
 				558871C6225CE67900BE7D7D /* Authentication.swift */,
+				5584EE332261AAC700200D15 /* AuthenticationUserData.swift */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -868,6 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5584EE342261AAC700200D15 /* AuthenticationUserData.swift in Sources */,
 				55E8DC18225CD77900B9108C /* Infra.swift in Sources */,
 				558871C7225CE67900BE7D7D /* Authentication.swift in Sources */,
 			);

@@ -17,7 +17,7 @@
 		5505FC20225CD62600D01C87 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; };
 		5505FC21225CD62600D01C87 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		555EA6B2225D933800FC4735 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555EA6B1225D933800FC4735 /* Authentication.storyboard */; };
-		555EA6B4225E26D400FC4735 /* YMokuInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555EA6B3225E26D400FC4735 /* YMokuInputViewController.swift */; };
+		555EA6B4225E26D400FC4735 /* YmokuInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */; };
 		5584EE1222617B4D00200D15 /* Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584EE0922617B4D00200D15 /* Account.framework */; };
 		5584EE1922617B4D00200D15 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE1822617B4D00200D15 /* AccountTests.swift */; };
 		5584EE1B22617B4D00200D15 /* Account.h in Headers */ = {isa = PBXBuildFile; fileRef = 5584EE0B22617B4D00200D15 /* Account.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +25,10 @@
 		5584EE1F22617B4D00200D15 /* Account.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5584EE0922617B4D00200D15 /* Account.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5584EE2722617B6400200D15 /* YmokuAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2622617B6400200D15 /* YmokuAccount.swift */; };
 		5584EE2922617BC300200D15 /* YmokuProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2822617BC300200D15 /* YmokuProfile.swift */; };
+		5584EE2B22617DB600200D15 /* YmokuAccountCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2A22617DB600200D15 /* YmokuAccountCreateViewController.swift */; };
+		5584EE2E2261974500200D15 /* YmokuDisplayNameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */; };
+		5584EE302261999400200D15 /* YmokuNameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE2F2261999400200D15 /* YmokuNameInputViewController.swift */; };
+		5584EE3222619E3500200D15 /* YmokuAffiliationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584EE3122619E3500200D15 /* YmokuAffiliationViewController.swift */; };
 		558871C7225CE67900BE7D7D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558871C6225CE67900BE7D7D /* Authentication.swift */; };
 		55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CAE225CD3010006C3EE /* AppDelegate.swift */; };
 		55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CB0225CD3010006C3EE /* ViewController.swift */; };
@@ -129,7 +133,7 @@
 		5505FC1A225CD62600D01C87 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		5505FC1C225CD62600D01C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555EA6B1225D933800FC4735 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		555EA6B3225E26D400FC4735 /* YMokuInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMokuInputViewController.swift; sourceTree = "<group>"; };
+		555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuInputViewController.swift; sourceTree = "<group>"; };
 		5584EE0922617B4D00200D15 /* Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5584EE0B22617B4D00200D15 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		5584EE0C22617B4D00200D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +142,10 @@
 		5584EE1A22617B4D00200D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5584EE2622617B6400200D15 /* YmokuAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuAccount.swift; sourceTree = "<group>"; };
 		5584EE2822617BC300200D15 /* YmokuProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuProfile.swift; sourceTree = "<group>"; };
+		5584EE2A22617DB600200D15 /* YmokuAccountCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuAccountCreateViewController.swift; sourceTree = "<group>"; };
+		5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuDisplayNameInputViewController.swift; sourceTree = "<group>"; };
+		5584EE2F2261999400200D15 /* YmokuNameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuNameInputViewController.swift; sourceTree = "<group>"; };
+		5584EE3122619E3500200D15 /* YmokuAffiliationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuAffiliationViewController.swift; sourceTree = "<group>"; };
 		558871C6225CE67900BE7D7D /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		55B74CAB225CD3010006C3EE /* Ymoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ymoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B74CAE225CD3010006C3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -274,6 +282,18 @@
 			path = AccountTests;
 			sourceTree = "<group>";
 		};
+		5584EE2C22617DCE00200D15 /* AccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */,
+				5584EE2A22617DB600200D15 /* YmokuAccountCreateViewController.swift */,
+				5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */,
+				5584EE2F2261999400200D15 /* YmokuNameInputViewController.swift */,
+				5584EE3122619E3500200D15 /* YmokuAffiliationViewController.swift */,
+			);
+			path = AccountViewController;
+			sourceTree = "<group>";
+		};
 		55B74CA2225CD3010006C3EE = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +327,7 @@
 		55B74CAD225CD3010006C3EE /* Ymoku */ = {
 			isa = PBXGroup;
 			children = (
+				5584EE2C22617DCE00200D15 /* AccountViewController */,
 				55B74CDC225CD3C70006C3EE /* Extension */,
 				55B74CE3225CD3C70006C3EE /* Color */,
 				55B74CE0225CD3C70006C3EE /* Navigation */,
@@ -318,7 +339,6 @@
 				55B74CBA225CD3030006C3EE /* Info.plist */,
 				55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */,
 				555EA6B1225D933800FC4735 /* Authentication.storyboard */,
-				555EA6B3225E26D400FC4735 /* YMokuInputViewController.swift */,
 			);
 			path = Ymoku;
 			sourceTree = "<group>";
@@ -883,13 +903,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B74CE5225CD3C70006C3EE /* UIColor+rgb+hex.swift in Sources */,
+				5584EE3222619E3500200D15 /* YmokuAffiliationViewController.swift in Sources */,
+				5584EE2B22617DB600200D15 /* YmokuAccountCreateViewController.swift in Sources */,
 				55B74CE6225CD3C70006C3EE /* String+URLEncoded.swift in Sources */,
 				55B74CE9225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift in Sources */,
 				55B74CE8225CD3C70006C3EE /* YMokuNavigationController.swift in Sources */,
 				55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */,
-				555EA6B4225E26D400FC4735 /* YMokuInputViewController.swift in Sources */,
+				555EA6B4225E26D400FC4735 /* YmokuInputViewController.swift in Sources */,
+				5584EE302261999400200D15 /* YmokuNameInputViewController.swift in Sources */,
 				55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */,
 				55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */,
+				5584EE2E2261974500200D15 /* YmokuDisplayNameInputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

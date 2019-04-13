@@ -17,9 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
-        Authentication.createUser(email: "falcon.x.0328@gmail.com", password: "******", completion: { e in
-            print(e)
-        })
+
     }
     
 }

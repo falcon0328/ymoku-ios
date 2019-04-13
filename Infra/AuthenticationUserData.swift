@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+/// 認証処理の結果返ってきたデータのレスポンスクラス
+public struct AuthenticationUserData {
+    /// ユーザID
+    public let userID: String
+    /// メールアドレス
+    public let email: String
+    /// 表示名
+    public let displayName: String
+}

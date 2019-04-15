@@ -26,6 +26,24 @@ public class Authentication {
         case affiliation
     }
     
+    /// 現在ログインしているユーザ
+    public static var currentLoginUser: AuthenticationUserData? {
+        get {
+            guard let user = AuthenticationUserData(user: Auth.auth().currentUser) else {
+                return nil
+            }
+            return user
+        }
+    }
+    
+    /// 現在ログインしているかどうか
+    public static var isLogin: Bool {
+        if currentLoginUser == nil {
+            return false
+        }
+        return true
+    }
+    
     /// ユーザを作成する機能を実装
     ///
     /// - Parameters:

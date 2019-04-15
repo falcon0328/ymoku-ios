@@ -51,6 +51,10 @@ public class Authentication {
     /// - Parameters:
     ///   - email: メールアドレス
     ///   - password: パスワード
+    ///   - displayName: 表示名
+    ///   - lastName: 姓
+    ///   - firstName: 名前
+    ///   - affiliation: 所属
     ///   - completion: 完了時のハンドラ
     public static func createUser(email: String,
                                   password: String,

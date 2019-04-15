@@ -16,6 +16,8 @@ public class Authentication {
     private static let db = Firestore.firestore()
     /// プロフィールの各フィールド名
     private enum ProfileFieldName: String {
+        /// タイムスタンプ
+        case timestamp
         /// 表示名
         case displayName
         /// 姓
@@ -96,8 +98,9 @@ public class Authentication {
     ///   - firstName: 名
     ///   - affiliation: 所属
     /// - Returns: プロフィール情報の辞書
-    static func createProfile(displayName: String, lastName: String, firstName: String, affiliation: String) -> [String: String] {
-        return [ProfileFieldName.displayName.rawValue: displayName,
+    static func createProfile(displayName: String, lastName: String, firstName: String, affiliation: String) -> [String: Any] {
+        return [ProfileFieldName.timestamp.rawValue: FieldValue.serverTimestamp(),
+                ProfileFieldName.displayName.rawValue: displayName,
                 ProfileFieldName.lastName.rawValue: lastName,
                 ProfileFieldName.firstName.rawValue: firstName,
                 ProfileFieldName.affiliation.rawValue: affiliation]

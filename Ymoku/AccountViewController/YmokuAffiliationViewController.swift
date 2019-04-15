@@ -19,30 +19,35 @@ class YmokuAffiliationViewController: YmokuInputViewController {
                                                                  target: self,
                                                                  action: #selector(doneButtonTapped(_:)))
     }
-    
-    override func canMoveToNextPage() -> Bool {
-        // TODO: 正規表現してジャッジすること
-        return true
-    }
-    
-    override func configAccountData() -> Bool {
-        guard let affiliation = affiliationTextField.text else {
-            return false
-        }
-        ymokuAccount?.profile.affiliation = affiliation
-        return true
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
     }
     
     @objc func doneButtonTapped(_ sender: UIButton) {
+        configAffiliationIfNeed()
+        createYmokuUser()
+    }
+    
+    /// 所属のパラメータを設定する
+    func configAffiliationIfNeed() {
+        guard let affiliation = affiliationTextField.text else {
+            return
+        }
+        ymokuAccount?.profile.affiliation = affiliation
+    }
+    
+    /// ワイもく！アカウントの作成処理を呼び出すメソッド
+    func createYmokuUser() {
         guard let ymokuAccount = ymokuAccount else {
             return
         }
         Authentication.createUser(email: ymokuAccount.email,
                                   password: ymokuAccount.password,
+                                  displayName: ymokuAccount.displayName,
+                                  lastName: ymokuAccount.profile.lastName,
+                                  firstName: ymokuAccount.profile.firstName,
+                                  affiliation: ymokuAccount.profile.affiliation,
                                   completion: { error, userData in
                                     if let error = error {
                                         //TODO: エラー処理

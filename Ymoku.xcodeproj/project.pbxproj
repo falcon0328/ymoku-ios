@@ -16,6 +16,7 @@
 		5505FC1D225CD62600D01C87 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 5505FC0D225CD62600D01C87 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5505FC20225CD62600D01C87 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; };
 		5505FC21225CD62600D01C87 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5505FC0B225CD62600D01C87 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		555BD42F2264C3F60006457E /* YmokuLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BD42E2264C3F60006457E /* YmokuLoginViewController.swift */; };
 		555EA6B2225D933800FC4735 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555EA6B1225D933800FC4735 /* Authentication.storyboard */; };
 		555EA6B4225E26D400FC4735 /* YmokuInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */; };
 		5584EE1222617B4D00200D15 /* Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584EE0922617B4D00200D15 /* Account.framework */; };
@@ -133,6 +134,7 @@
 		5505FC13225CD62600D01C87 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5505FC1A225CD62600D01C87 /* InfraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraTests.swift; sourceTree = "<group>"; };
 		5505FC1C225CD62600D01C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555BD42E2264C3F60006457E /* YmokuLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuLoginViewController.swift; sourceTree = "<group>"; };
 		555EA6B1225D933800FC4735 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmokuInputViewController.swift; sourceTree = "<group>"; };
 		5584EE0922617B4D00200D15 /* Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +290,7 @@
 		5584EE2C22617DCE00200D15 /* AccountViewController */ = {
 			isa = PBXGroup;
 			children = (
+				555BD42E2264C3F60006457E /* YmokuLoginViewController.swift */,
 				555EA6B3225E26D400FC4735 /* YmokuInputViewController.swift */,
 				5584EE2A22617DB600200D15 /* YmokuAccountCreateViewController.swift */,
 				5584EE2D2261974500200D15 /* YmokuDisplayNameInputViewController.swift */,
@@ -947,6 +950,7 @@
 				55B74CB1225CD3010006C3EE /* ViewController.swift in Sources */,
 				555EA6B4225E26D400FC4735 /* YmokuInputViewController.swift in Sources */,
 				5584EE302261999400200D15 /* YmokuNameInputViewController.swift in Sources */,
+				555BD42F2264C3F60006457E /* YmokuLoginViewController.swift in Sources */,
 				55B74CAF225CD3010006C3EE /* AppDelegate.swift in Sources */,
 				55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */,
 				5584EE2E2261974500200D15 /* YmokuDisplayNameInputViewController.swift in Sources */,

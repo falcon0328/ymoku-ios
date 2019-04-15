@@ -8,6 +8,7 @@ target 'Infra' do
   # Pods for Infra
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   
   target 'InfraTests' do
     inherit! :search_paths

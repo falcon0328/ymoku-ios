@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 /// 認証処理の結果返ってきたデータのレスポンスクラス
 public struct AuthenticationUserData {
@@ -14,6 +15,15 @@ public struct AuthenticationUserData {
     public let userID: String
     /// メールアドレス
     public let email: String
-    /// 表示名
-    public let displayName: String
+    
+    /// イニシャライザ
+    ///
+    /// - Parameter user: Firebaseのユーザクラス
+    public init?(user: User?) {
+        guard let user = user, let email = user.email else {
+            return nil
+        }
+        self.userID = user.uid
+        self.email = email
+    }
 }

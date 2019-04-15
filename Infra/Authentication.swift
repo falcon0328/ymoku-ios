@@ -16,6 +16,8 @@ public class Authentication {
     private static let db = Firestore.firestore()
     /// プロフィールの各フィールド名
     private enum ProfileFieldName: String {
+        /// 表示名
+        case displayName
         /// 姓
         case lastName
         /// 名
@@ -40,14 +42,12 @@ public class Authentication {
         Auth.auth().createUser(withEmail: email,
                                password: password,
                                completion: { (authResult, error) in
-                                guard let user = authResult?.user, let email = user.email else {
-                                    // TODO: エラー実装
+                                guard let userData = AuthenticationUserData(user: authResult?.user) else {
+                                    completion(error, nil)
                                     return
                                 }
-                                let userData = AuthenticationUserData.init(userID: user.uid,
-                                                                           email: email,
-                                                                           displayName: displayName)
-                                let profile = createProfile(lastName: lastName,
+                                let profile = createProfile(displayName: displayName,
+                                                            lastName: lastName,
                                                             firstName: firstName,
                                                             affiliation: affiliation)
                                 db.collection("user").addDocument(data: profile, completion: { error in
@@ -73,12 +73,14 @@ public class Authentication {
     /// プロフィール作成処理
     ///
     /// - Parameters:
+    ///   - displayName: 表示名
     ///   - lastName: 姓
     ///   - firstName: 名
     ///   - affiliation: 所属
     /// - Returns: プロフィール情報の辞書
-    static func createProfile(lastName: String, firstName: String, affiliation: String) -> [String: String] {
-        return [ProfileFieldName.lastName.rawValue: lastName,
+    static func createProfile(displayName: String, lastName: String, firstName: String, affiliation: String) -> [String: String] {
+        return [ProfileFieldName.displayName.rawValue: displayName,
+                ProfileFieldName.lastName.rawValue: lastName,
                 ProfileFieldName.firstName.rawValue: firstName,
                 ProfileFieldName.affiliation.rawValue: affiliation]
     }

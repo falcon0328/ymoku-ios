@@ -120,6 +120,22 @@ public class Authentication {
         }
     }
     
+    /// パスワードをリセットするメールを送信する
+    ///
+    /// - Parameters:
+    ///   - email: メールアドレス
+    ///   - completion: 完了時のハンドラ
+    public static func sendPasswordReset(email: String, completion: @escaping(Error?) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email, completion: { error in
+            if let error = error {
+                // TODO: パスワードリセットメールが送れなかった
+                completion(error)
+                return
+            }
+            completion(nil)
+        })
+    }
+    
     /// プロフィール作成処理
     ///
     /// - Parameters:

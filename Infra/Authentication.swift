@@ -19,7 +19,7 @@ public class Authentication {
         /// タイムスタンプ
         case timestamp
         /// 表示名
-        case displayName
+        case userID
         /// 姓
         case lastName
         /// 名
@@ -66,16 +66,29 @@ public class Authentication {
         Auth.auth().createUser(withEmail: email,
                                password: password,
                                completion: { (authResult, error) in
-                                guard let userData = AuthenticationUserData(user: authResult?.user) else {
-                                    completion(error, nil)
+                                if let error = error {
+                                    // TODO: アカウント作成失敗
                                     return
                                 }
-                                let profile = createProfile(displayName: displayName,
-                                                            lastName: lastName,
-                                                            firstName: firstName,
-                                                            affiliation: affiliation)
-                                db.collection("user").addDocument(data: profile, completion: { error in
-                                    completion(error, userData)
+                                let chengeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                                chengeRequest?.displayName = displayName
+                                chengeRequest?.commitChanges(completion: { (error) in
+                                    if let error = error {
+                                        // TODO: 表示名が変更できませんでした
+                                    }
+                                    guard let userData = AuthenticationUserData(user: authResult?.user) else {
+                                        // TODO: ユーザ情報自体かE-mailが取得できなかった
+                                        completion(error, nil)
+                                        return
+                                    }
+                                    let profile = createProfile(userID: userData.userID,
+                                                                lastName: lastName,
+                                                                firstName: firstName,
+                                                                affiliation: affiliation)
+                                    db.collection("user").addDocument(data: profile, completion: { error in
+                                        // TODO: エラー処理
+                                        completion(error, userData)
+                                    })
                                 })
         })
     }
@@ -90,6 +103,7 @@ public class Authentication {
         Auth.auth().signIn(withEmail: email,
                            password: password,
                            completion: { (authResult, error) in
+                            // TODO: ログイン処理エラー
                             completion(error)
         })
     }
@@ -97,14 +111,14 @@ public class Authentication {
     /// プロフィール作成処理
     ///
     /// - Parameters:
-    ///   - displayName: 表示名
+    ///   - userID: 表示名
     ///   - lastName: 姓
     ///   - firstName: 名
     ///   - affiliation: 所属
     /// - Returns: プロフィール情報の辞書
-    static func createProfile(displayName: String, lastName: String, firstName: String, affiliation: String) -> [String: Any] {
+    static func createProfile(userID: String, lastName: String, firstName: String, affiliation: String) -> [String: Any] {
         return [ProfileFieldName.timestamp.rawValue: FieldValue.serverTimestamp(),
-                ProfileFieldName.displayName.rawValue: displayName,
+                ProfileFieldName.userID.rawValue: userID,
                 ProfileFieldName.lastName.rawValue: lastName,
                 ProfileFieldName.firstName.rawValue: firstName,
                 ProfileFieldName.affiliation.rawValue: affiliation]

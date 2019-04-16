@@ -62,23 +62,23 @@ public class Authentication {
                                   lastName: String,
                                   firstName: String,
                                   affiliation: String,
-                                  completion: @escaping (Error?, AuthenticationUserData?) -> Void) {
+                                  completion: @escaping (NSError?, AuthenticationUserData?) -> Void) {
         Auth.auth().createUser(withEmail: email,
                                password: password,
                                completion: { (authResult, error) in
-                                if let error = error {
-                                    // TODO: アカウント作成失敗
+                                if error != nil {
+                                    completion(NSError(domain: YmokuErrorDomain, code: AccountCreateFailed, userInfo: nil), nil)
                                     return
                                 }
                                 let chengeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                                 chengeRequest?.displayName = displayName
                                 chengeRequest?.commitChanges(completion: { (error) in
-                                    if let error = error {
-                                        // TODO: 表示名が変更できませんでした
+                                    if error != nil {
+                                        completion(NSError(domain: YmokuErrorDomain, code: DisplaynameChangeFailed, userInfo: nil), nil)
+                                        return
                                     }
                                     guard let userData = AuthenticationUserData(user: authResult?.user) else {
-                                        // TODO: ユーザ情報自体かE-mailが取得できなかった
-                                        completion(error, nil)
+                                        completion(NSError(domain: YmokuErrorDomain, code: InvalidUserData, userInfo: nil), nil)
                                         return
                                     }
                                     let profile = createProfile(userID: userData.userID,
@@ -86,8 +86,10 @@ public class Authentication {
                                                                 firstName: firstName,
                                                                 affiliation: affiliation)
                                     db.collection("user").addDocument(data: profile, completion: { error in
-                                        // TODO: エラー処理
-                                        completion(error, userData)
+                                        if error != nil {
+                                            completion(NSError(domain: YmokuErrorDomain, code: SaveUserDataFailed, userInfo: nil), nil)
+                                        }
+                                        completion(nil, userData)
                                     })
                                 })
         })
@@ -99,12 +101,11 @@ public class Authentication {
     ///   - email: メールアドレス
     ///   - password: パスワード
     ///   - completion: 完了時のハンドラ
-    public static func login(email: String, password: String, completion: @escaping (Error?) -> Void) {
+    public static func login(email: String, password: String, completion: @escaping (NSError?) -> Void) {
         Auth.auth().signIn(withEmail: email,
                            password: password,
                            completion: { (authResult, error) in
-                            // TODO: ログイン処理エラー
-                            completion(error)
+                            completion(NSError(domain: YmokuErrorDomain, code: LoginFailed, userInfo: nil))
         })
     }
     
@@ -115,8 +116,7 @@ public class Authentication {
         do {
             try Auth.auth().signOut()
         } catch {
-            let error = NSError(domain: "", code: 0, userInfo: nil)
-            throw error
+            throw NSError(domain: YmokuErrorDomain, code: LogoutFailed, userInfo: nil)
         }
     }
     
@@ -125,11 +125,10 @@ public class Authentication {
     /// - Parameters:
     ///   - email: メールアドレス
     ///   - completion: 完了時のハンドラ
-    public static func sendPasswordReset(email: String, completion: @escaping(Error?) -> Void) {
+    public static func sendPasswordReset(email: String, completion: @escaping(NSError?) -> Void) {
         Auth.auth().sendPasswordReset(withEmail: email, completion: { error in
-            if let error = error {
-                // TODO: パスワードリセットメールが送れなかった
-                completion(error)
+            if error != nil {
+                completion(NSError(domain: YmokuErrorDomain, code: SendPasswordResetMailFailed, userInfo: nil))
                 return
             }
             completion(nil)

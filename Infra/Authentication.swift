@@ -108,6 +108,18 @@ public class Authentication {
         })
     }
     
+    /// ログアウト処理を行う
+    ///
+    /// - Throws: ログアウト失敗時のエラー
+    public static func logout() throws {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            let error = NSError(domain: "", code: 0, userInfo: nil)
+            throw error
+        }
+    }
+    
     /// プロフィール作成処理
     ///
     /// - Parameters:

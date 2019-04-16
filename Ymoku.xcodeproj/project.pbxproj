@@ -44,6 +44,7 @@
 		55B74CE8225CD3C70006C3EE /* YMokuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */; };
 		55B74CE9225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */; };
 		55B74CEA225CD3C70006C3EE /* YMokuColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B74CE4225CD3C70006C3EE /* YMokuColor.swift */; };
+		55B9BF172265FEFD00BC16B1 /* SendPasswordResetMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9BF162265FEFD00BC16B1 /* SendPasswordResetMailViewController.swift */; };
 		55E8DC18225CD77900B9108C /* Infra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E8DC17225CD77900B9108C /* Infra.swift */; };
 		55E8DC1A225CD8A000B9108C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */; };
 		5AE43923067DF684141DFA29 /* Pods_YmokuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F231E1E16000E3AF93865E89 /* Pods_YmokuTests.framework */; };
@@ -169,6 +170,7 @@
 		55B74CE1225CD3C70006C3EE /* YMokuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationController.swift; sourceTree = "<group>"; };
 		55B74CE2225CD3C70006C3EE /* YMokuNavigationBarTitleTextAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuNavigationBarTitleTextAttribute.swift; sourceTree = "<group>"; };
 		55B74CE4225CD3C70006C3EE /* YMokuColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMokuColor.swift; sourceTree = "<group>"; };
+		55B9BF162265FEFD00BC16B1 /* SendPasswordResetMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPasswordResetMailViewController.swift; sourceTree = "<group>"; };
 		55E8DC17225CD77900B9108C /* Infra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infra.swift; sourceTree = "<group>"; };
 		55E8DC19225CD8A000B9108C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		732ADE8CB1249946AF3463E3 /* Pods-YmokuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YmokuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YmokuUITests/Pods-YmokuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 		55B74CAD225CD3010006C3EE /* Ymoku */ = {
 			isa = PBXGroup;
 			children = (
+				55B9BF152265FEAD00BC16B1 /* PasswordResetViewController */,
 				5584EE2C22617DCE00200D15 /* AccountViewController */,
 				55B74CDC225CD3C70006C3EE /* Extension */,
 				55B74CE3225CD3C70006C3EE /* Color */,
@@ -394,6 +397,14 @@
 			);
 			name = Color;
 			path = "../../mokumoku-app-ios/mokumoku-app-ios/Color";
+			sourceTree = "<group>";
+		};
+		55B9BF152265FEAD00BC16B1 /* PasswordResetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55B9BF162265FEFD00BC16B1 /* SendPasswordResetMailViewController.swift */,
+			);
+			path = PasswordResetViewController;
 			sourceTree = "<group>";
 		};
 		90EE4CF659A30799732BA4AC /* Frameworks */ = {
@@ -941,6 +952,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B9BF172265FEFD00BC16B1 /* SendPasswordResetMailViewController.swift in Sources */,
 				55B74CE5225CD3C70006C3EE /* UIColor+rgb+hex.swift in Sources */,
 				5584EE3222619E3500200D15 /* YmokuAffiliationViewController.swift in Sources */,
 				5584EE2B22617DB600200D15 /* YmokuAccountCreateViewController.swift in Sources */,

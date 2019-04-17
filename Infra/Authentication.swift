@@ -138,7 +138,7 @@ public class Authentication {
     /// プロフィール作成処理
     ///
     /// - Parameters:
-    ///   - userID: 表示名
+    ///   - userID: ユーザID
     ///   - lastName: 姓
     ///   - firstName: 名
     ///   - affiliation: 所属
